@@ -1,0 +1,17 @@
+{
+  "name": "dojo-demo",
+  "version": "0.1.0",
+  "description": "Message board using Dojo 1.x",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server --no-browser --port=5000"
+  },
+  "author": "hank",
+  "license": "MIT",
+  "dependencies": {
+    "dojo": "^1.16.4"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
