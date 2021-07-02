@@ -262,7 +262,14 @@ destroy@~1.0.4:
   resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.0.4.tgz#978857442c44749e4206613e37946205826abd80"
   integrity sha1-l4hXRCxEdJ5CBmE+N5RiBYJqvYA=
 
-dojo@^1.16.4:
+dijit@^1.16.4:
+  version "1.16.4"
+  resolved "https://registry.yarnpkg.com/dijit/-/dijit-1.16.4.tgz#2b6048cec9ddbbb5164a71ae4cb6c0a4ffa6e296"
+  integrity sha512-afCky/mWxJQVGp/JYldLPZOC/CuqJP843LYE/nmHZA5FbjKLtQiTnjfjArSWJ9JBvgzSV74NsnnBYgryqi2THQ==
+  dependencies:
+    dojo "1.16.4"
+
+dojo@1.16.4, dojo@^1.16.4:
   version "1.16.4"
   resolved "https://registry.yarnpkg.com/dojo/-/dojo-1.16.4.tgz#b7dc831d5837aa222fa4e19fce465756b090bb95"
   integrity sha512-mdW1ZLPpzUp+2ZajgyeuJH+5y9g+drUekrZplDK/mv28uDtfGRi66f7GJx138Zm9zWkYaDa1MRlz7aE9PpSQOw==

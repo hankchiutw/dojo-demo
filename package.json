@@ -9,6 +9,7 @@
   "author": "hank",
   "license": "MIT",
   "dependencies": {
+    "dijit": "^1.16.4",
     "dojo": "^1.16.4"
   },
   "devDependencies": {
