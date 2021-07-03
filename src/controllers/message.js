@@ -14,5 +14,13 @@ define(['src/stores/message', 'src/entities', 'src/app-state'], function(
     return messageStore.add(message);
   }
 
-  return { fetch, add };
+  function onAdd(callback) {
+    messageStore.on('add', callback);
+  }
+
+  function onDelete(callback) {
+    messageStore.on('delete', callback);
+  }
+
+  return { fetch, add, onAdd, onDelete };
 });

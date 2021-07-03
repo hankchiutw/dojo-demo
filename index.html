@@ -3,10 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <title>Dojo 1 demo</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div>Dojo 1 demo</div>
-    <div data-dojo-type="MessageBoard"></div>
+    <div class="root-container">
+      <div>Dojo 1 demo</div>
+      <div data-dojo-type="MessageBoard"></div>
+      <div data-dojo-type="MessageInput"></div>
+    </div>
     <script
       src="node_modules/dojo/dojo.js"
       data-dojo-config="async: true, packages: [{ name: 'src', location: '../../src' }, { name: 'dstore', location: '../dojo-dstore' }]"
