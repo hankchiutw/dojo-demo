@@ -1,8 +1,5 @@
-define(['dstore/db/LocalStorage', 'src/entities'], function(LocalDB, { Message }) {
-  const messages = [new Message(), new Message()];
-
+define(['dstore/db/LocalStorage'], function(LocalDB) {
   const store = new LocalDB({
-    data: messages,
     idProperty: 'id',
     storeName: 'message',
   });
