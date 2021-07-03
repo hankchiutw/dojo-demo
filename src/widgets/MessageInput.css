@@ -1,0 +1,37 @@
+.message-input {
+  background-color: #f1f5f9;
+  height: 80px;
+  padding: 0 36px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-input input {
+  border: solid 1px #e8ebf0;
+  border-radius: 10px;
+  flex: 1;
+  height: 40px;
+  color: #b1b7bb;
+  outline: none;
+  padding: 0 20px;
+}
+
+.message-input input::placeholder {
+  color: #b1b7bb;
+}
+
+.message-input-anchor {
+  background-color: #2d6be6;
+  border-radius: 12px;
+  width: 40px;
+  height: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}

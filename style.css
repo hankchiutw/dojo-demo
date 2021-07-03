@@ -1,17 +1,47 @@
+@import 'src/widgets/MessageBoard.css';
+@import 'src/widgets/MessageCard.css';
+@import 'src/widgets/MessageInput.css';
+@import 'src/widgets/RemoveAnchor.css';
+
 body,
 html {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
+  color: #3a4b5c;
 }
 
 .root-container {
   display: flex;
   flex-direction: column;
   height: 100%;
+  align-items: center;
+  background-color: #f6f9fd;
 }
 
-.message-board {
-  overflow: auto;
+.header {
+  border-bottom: solid 1px #f1f2f6;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcfdfc;
+  width: 100%;
+}
+
+.app-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  max-width: 640px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 640px) {
+  .app-container {
+    width: 100%;
+  }
 }

@@ -26,6 +26,7 @@ define([
     baseClass: 'message-board',
 
     postCreate() {
+      // use event delegation avoid massive listeners
       on(this.domNode, '.remove-anchor:click', e => {
         messageController.remove(e.target.getAttribute('dataId'));
       });
@@ -33,6 +34,13 @@ define([
 
     async startup() {
       await this._renderMessages();
+      this._watchMessages();
+    },
+
+    /**
+     * Handler message changes.
+     */
+    _watchMessages() {
       messageController.onAdd(e => {
         this._appendMessage(e.target);
       });
@@ -47,6 +55,7 @@ define([
       card.placeAt(this.domNode);
       if (message.author === username) {
         new RemoveAnchor({ dataId: message.id }).placeAt(card.domNode);
+        card.domNode.classList.add('align-right');
       }
       card.domNode.scrollIntoView();
     },

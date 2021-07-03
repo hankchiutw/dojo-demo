@@ -5,5 +5,7 @@ define({
     content = '';
     author = '';
     createdAt = new Date();
+
+    timeLabel = new Date().toTimeString().substr(0, 8);
   },
 });

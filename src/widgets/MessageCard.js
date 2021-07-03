@@ -9,5 +9,6 @@ define([
     baseClass: 'message-card',
     author: '',
     content: '',
+    timeLabel: '',
   });
 });

@@ -8,7 +8,12 @@ define([
   return declare('MessageInput', [_WidgetBase, _TemplatedMixin], {
     templateString: template,
     baseClass: 'message-input',
-    sendMessage(e) {
+    handlerEnter(e) {
+      if (e.keyCode === 13) {
+        this.sendMessage();
+      }
+    },
+    sendMessage() {
       if (!this.inputNode.value) {
         return;
       }

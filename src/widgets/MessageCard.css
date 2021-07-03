@@ -1,0 +1,41 @@
+.message-card {
+  margin: 16px 30px;
+  display: flex;
+}
+
+.message-card-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.message-card-author {
+  color: #9099a2;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.message-card-content {
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px 14px;
+  max-width: 70%;
+}
+
+.message-card-time {
+  color: #9099a2;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.message-card.align-right {
+  justify-content: flex-end;
+}
+
+.message-card.align-right .message-card-inner {
+  align-items: flex-end;
+}
+
+.message-card.align-right .message-card-content {
+  background-color: #2d6be6;
+  color: white;
+}
