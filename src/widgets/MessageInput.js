@@ -9,6 +9,9 @@ define([
     templateString: template,
     baseClass: 'message-input',
     sendMessage(e) {
+      if (!this.inputNode.value) {
+        return;
+      }
       messageController.add(this.inputNode.value);
       this.inputNode.value = '';
     },

@@ -1,8 +1,9 @@
 define({
   User: class User {},
   Message: class Message {
-    id = Date.now();
+    id = Date.now().toString();
     content = '';
-    createdAt = Date.now();
+    author = '';
+    createdAt = new Date();
   },
 });
