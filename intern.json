@@ -1,0 +1,17 @@
+{
+  "loader": {
+    "script": "dojo",
+    "options": {
+      "packages": [
+        { "name": "src", "location": "src" },
+        { "name": "dojo", "location": "node_modules/dojo" },
+        { "name": "dijit", "location": "node_modules/dijit" },
+        { "name": "dstore", "location": "node_modules/dojo-dstore" }
+      ]
+    }
+  },
+  "suites": "src/**/*.spec.js",
+  "filterErrorStack": false,
+  "environments": ["node"],
+  "plugins": ["node_modules/mock-local-storage"]
+}
