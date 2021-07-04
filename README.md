@@ -1,6 +1,8 @@
 # Dojo 1 demo
 
-This a message board app made by Dojo 1.1x
+This a message board app made by Dojo 1.1x.
+
+Live demo: https://dojo-demo.vercel.app
 
 ### Completed features
 - Fetch and list messages from LocalStorage.
