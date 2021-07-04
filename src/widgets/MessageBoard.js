@@ -26,7 +26,7 @@ define([
     baseClass: 'message-board',
 
     postCreate() {
-      // use event delegation avoid massive listeners
+      // use event delegation to avoid massive listeners
       on(this.domNode, '.remove-anchor:click', e => {
         messageController.remove(e.target.getAttribute('dataId'));
       });
